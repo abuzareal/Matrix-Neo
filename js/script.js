@@ -17,7 +17,7 @@ class Symbol {
     this.text = this.characters.charAt(
       Math.floor(Math.random() * this.characters.length)
     );
-    ctx.fillStyle = "#008F11";
+    ctx.fillStyle = "#ffffff";
     ctx.fillText(this.text, this.x * this.fontSize, this.y * this.fontSize);
     if (this.y * this.fontSize > this.canvasHeight && Math.random() > 0.98) {
       this.y = 0;
