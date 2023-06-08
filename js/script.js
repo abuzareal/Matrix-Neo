@@ -17,7 +17,7 @@ class Symbol {
     this.text = this.characters.charAt(
       Math.floor(Math.random() * this.characters.length)
     );
-    ctx.fillStyle = "#f3f";
+    ctx.fillStyle = "#008F11";
     ctx.fillText(this.text, this.x * this.fontSize, this.y * this.fontSize);
     if (this.y * this.fontSize > this.canvasHeight && Math.random() > 0.98) {
       this.y = 0;
@@ -30,7 +30,7 @@ class Effect {
   constructor(canvasWidth, canvasHeight) {
     this.canvasWidth = canvasWidth;
     this.canvasHeight = canvasHeight;
-    this.fontSize = 20;
+    this.fontSize = 15;
     this.columns = this.canvasWidth / this.fontSize;
     this.symbols = [];
     this.#initalize();
